@@ -119,6 +119,9 @@ gap: 5rem;
 margin: 0 0 0 auto;
 
 }
+.container__text{
+padding: 0rem 1rem;
+}
 
 .container__image{
 grid-area: 1;
