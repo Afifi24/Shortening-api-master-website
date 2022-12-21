@@ -16,6 +16,7 @@ const Globalstyle = createGlobalStyle`
     --Very-Dark-Blue: hsl(255, 11%, 22%);
     --Very-Dark-Violet: hsl(260, 8%, 14%);
     --hover-color :#80e8e8;
+    --background-color:#F2F2F2;
 
    --transition:500ms;
 }
