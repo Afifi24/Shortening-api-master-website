@@ -88,9 +88,10 @@ background-color: var(--Very-Dark-Violet);
    display: flex;
    align-items: flex-start;
    justify-content: space-around;
-  img:hover {
+   
+  img{
     cursor: pointer;
-    fill: red;
+    filter: sepia(100%) hue-rotate(190deg) saturate(900%);
    }
    
    

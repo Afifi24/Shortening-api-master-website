@@ -10,9 +10,7 @@ export const Header = () => {
          <button className='btn'>Get Started</button>
       </div>
       <div className="container__image">
-        <div className="container__image-bg">
-
-        </div>
+      
         <img src={Image} alt="" />
       </div>
    </div>
@@ -37,7 +35,9 @@ overflow-x: hidden;
 }
 
 .container__image{
-
+img{
+  width: 100%;
+}
 }
 .container__text{
     h1{
@@ -67,5 +67,66 @@ overflow-x: hidden;
  
     
 }
+/* MEDIA QUERY (medium screen) */
+@media screen and (max-width:1024px){
+  .container{
+    width: 95%;
+grid-template-columns: 42% 43%;
+gap: 7rem;
+}
+.container__text{
+    h1{
+        font-size: 2.4rem;
+    }
+    h4{
+        font-size: 0.9rem;
+    }
+}
+}
+/* MEDIA QUERY (small screen) */
+@media screen and (max-width:800px){
+  .container{
+grid-template-columns: 1fr;
+grid-row: 1;
+gap: 5rem;
+margin: auto;
+}
+.container__text{
+  text-align: center;
+ 
+    h1{
+        font-size: 2rem;
 
+    }
+    h4{
+        font-size: 0.9rem;
+    }
+}
+.container__image{
+grid-area: 1;
+img{
+  width: 100%;
+}
+}
+}
+
+
+/* MEDIA QUERY (small screen) */
+@media screen and (max-width:450px){
+  .container{
+grid-template-columns: 1fr;
+gap: 5rem;
+margin: 0 0 0 auto;
+
+}
+
+.container__image{
+grid-area: 1;
+img{
+  width: 150%;
+}
+
+}
+
+} 
 `
