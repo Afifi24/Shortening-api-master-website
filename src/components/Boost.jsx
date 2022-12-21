@@ -19,7 +19,7 @@ export default Boost
 const Booststyle = styled.div`
 
 .container{
-    height: 42vh;
+    height: 15rem;
     background-color: var(--dark-violet-color);
     display: grid;
     place-items: center;
@@ -56,5 +56,16 @@ button{
         }
 }
 
+@media screen and (max-width:500px) {
+    
+    .text{
+        text-align: center;
+        margin: 0;
+        margin-top: 3rem;
+        h1{
+       font-size: 1.4rem;
+    }
+    }
+}
 
 `

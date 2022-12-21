@@ -48,7 +48,9 @@ const Footer = () => {
 export default Footer
 
 const Footerstyle = styled.div`
-height: 50vh;
+/* height: 50vh; */
+padding: 6rem 1rem;
+
 background-color: var(--Very-Dark-Violet);
 .container{
     color: #fff;
@@ -79,6 +81,7 @@ background-color: var(--Very-Dark-Violet);
         font-size: 0.9rem;
         cursor: pointer;
         transition: var(--transition);
+        color: var(--gray-color);
         &:hover{
             color: var(--primary-color);
         }
@@ -93,7 +96,30 @@ background-color: var(--Very-Dark-Violet);
     cursor: pointer;
     filter: sepia(100%) hue-rotate(190deg) saturate(900%);
    }
-   
-   
 }
+
+
+/* MEDIA QUERY (small screen) */
+@media screen and (max-width:1024px) {
+    .container{
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .container{
+        gap: 3rem;
+       grid-template-columns: 1fr;
+       place-items: center;
+       text-align: center;
+       padding: 2rem 1rem;
+
+    }
+    .social__media{
+  
+gap: 2rem;
+    }
+}
+
+
 `
