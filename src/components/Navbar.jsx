@@ -7,7 +7,14 @@ export const Navbar = () => {
     const [isshowing,setIshowing] = useState(false)
     const Toggle = ()=>{
         setIshowing(!isshowing)
+        if(isshowing){
+            document.body.style.overflow='unset'
+        }
+        else{
+            document.body.style.overflow='hidden'
+        }
     }
+
   return (
     <Navstyle>
       <nav>
