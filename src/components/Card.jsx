@@ -74,4 +74,52 @@ width: 100%;
         }
     }
 }
+
+/* MEDIA QUERY (medium screen) */
+@media screen and (max-width:1024px){
+width: 80%;
+
+.container{
+    width: 100%;  
+    height  :10rem;
+}
+.form{
+  input{
+  height: 3rem;
+  font-size: 0.9rem;
+  }
+  button{
+    width: 20%;
+    height: 3rem;
+    font-size: 1rem;
+  }
+}
+}
+
+
+
+/* MEDIA QUERY (small screen) */
+@media screen and (max-width:800px){
+width: 80%;
+
+.container{
+    width: 100%;  
+    height  :10.5rem;
+  
+}
+.form{
+  flex-direction: column;
+  gap: 2rem;
+  input{
+    height: 2.5rem;
+  
+  }
+  button{
+    width: 78%;
+  height: 2.5rem;
+  }
+}
+}
+
+
 `

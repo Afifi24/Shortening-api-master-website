@@ -36,7 +36,7 @@ overflow-x: hidden;
 
 .container__image{
 img{
-  width: 100%;
+  /* width: 100%; */
 }
 }
 .container__text{
@@ -70,7 +70,7 @@ img{
 /* MEDIA QUERY (medium screen) */
 @media screen and (max-width:1024px){
   .container{
-    width: 95%;
+width: 95%;
 grid-template-columns: 42% 43%;
 gap: 7rem;
 }
