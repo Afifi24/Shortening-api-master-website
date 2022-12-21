@@ -64,9 +64,11 @@ background-color: var(--Very-Dark-Violet);
 .logo{
     color: #fff;
     display: block;
-    img svg:hover{
+    img {
        cursor: pointer;
-       fill: red;
+       filter: invert(31%) sepia(100%) hue-rotate(130deg) saturate(900%);
+       
+  color: white;
     }
 }
 .List{
@@ -92,9 +94,10 @@ background-color: var(--Very-Dark-Violet);
    align-items: flex-start;
    justify-content: space-around;
    
-  img{
+  img:hover{
     cursor: pointer;
-    filter: sepia(100%) hue-rotate(190deg) saturate(900%);
+    filter: invert(31%) sepia(100%) hue-rotate(120deg) saturate(900%);
+    
    }
 }
 
